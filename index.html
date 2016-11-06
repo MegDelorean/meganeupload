@@ -3,6 +3,8 @@
 	<meta charset ="UTF-8"/>
 	<link rel = "stylesheet" href="css/bootstrap.min.css"/>
 	<link rel = "stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <script src="js/modernizr.custom.js"></script>
 	<title></title>
 </head>
 <body>
@@ -21,13 +23,51 @@
             <p>
 
 
-			<iframe src="https://player.vimeo.com/video/157920182" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			
+			<!--<iframe src="https://player.vimeo.com/video/157920182" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+
 	</section>
 
 	<section class="gallerie">
 
 			<h1> <span class="txtstyle"> MY WORK </span></h1>
+
+			<ul id="og-grid" class="og-grid">
+				<li>
+					<a href="#" data-largesrc="img/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<img src="img/thumbs/1.jpg" alt="img01"/>
+					</a>
+				</li>
+				<li>
+					<a href="#"  data-largesrc="img/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+						<img src="img/thumbs/2.jpg" alt="img02"/>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-largesrc="img/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="img/thumbs/3.jpg" alt="img03"/>
+					</a>
+				</li>
+				<li>
+					<a  href="#" data-largesrc="img/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<img src="img/thumbs/1.jpg" alt="img01"/>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-largesrc="img/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+						<img src="img/thumbs/2.jpg" alt="img02"/>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-largesrc="img/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="img/thumbs/3.jpg" alt="img03"/>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-largesrc="img/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<img src="img/thumbs/1.jpg" alt="img01"/>
+					</a>
+				</li>
+			</ul>
 
 
 	</section>
@@ -35,6 +75,12 @@
 
 
 	</div>
-<script src ="js/bootstrap.min.js"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/grid.js"></script>
+<script>
+  $(function() {
+    Grid.init();
+  });
+</script>
 </body>
 </html>

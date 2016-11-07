@@ -285,7 +285,7 @@ var Grid = (function() {
 	}
 
 	function getWinSize() {
-		winsize = { width : $window.width(), height : $window.height() };
+		winsize = { width : $window.width(), height : 500 };
 	}
 
 	function showPreview( $item ) {
@@ -294,7 +294,7 @@ var Grid = (function() {
 			// item´s offset top
 			position = $item.data( 'offsetTop' );
 
-		scrollExtra = 0;
+		scrollExtra = 200;
 
 		// if a preview exists and previewPos is different (different row) from item´s top then close it
 		if( typeof preview != 'undefined' ) {
@@ -349,7 +349,7 @@ var Grid = (function() {
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
-			this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );
+			this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details);
 			this.$previewEl = $( '<div class="og-expander"></div>' ).append( this.$previewInner );
 			// append preview element to the item
 			this.$item.append( this.getEl() );

@@ -50,7 +50,8 @@
 body {
   position : relative;
 padding-top:100px;
-background-image: url("../img/zebra6.png");
+background: url("../img/zebra6.png");
+background-attachment: fixed;
 font-family: 'ralewayregular';
 
 }
@@ -97,6 +98,8 @@ color:#FE2E64;
 /*introduce*/
 
 .introduce {
+background: url("../img/fil2.png");
+background-repeat: no-repeat;
 padding-top:100px;
 text-align: center;
 }
@@ -144,6 +147,12 @@ color :#59C3DB ;
 	text-align:center;
 }
 
+.gallerie {
+
+margin-top: 200px;
+
+}
+
 .gallerie h1 {
 
 margin-top:20px;
@@ -151,5 +160,20 @@ font-size: 4em;
 font-family: 'headline_twohplhs';
 color: #59C3DB;
 margin-bottom:0px;
+
+}
+
+/*parcours*/
+.parcours {
+margin-top:200px;
+text-align: center;
+margin:auto;
+}
+.parcours h1{
+text-align: center;
+margin-top:0px;
+font-size: 5em;
+font-family: 'headline_twohplhs';
+color: #59C3DB;
 
 }

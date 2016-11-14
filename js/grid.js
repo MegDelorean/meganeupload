@@ -285,7 +285,7 @@ var Grid = (function() {
 	}
 
 	function getWinSize() {
-		winsize = { width : $window.width(), height : 500 };
+		winsize = { width : $window.width(), height : 900 };
 	}
 
 	function showPreview( $item ) {
